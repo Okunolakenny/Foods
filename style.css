@@ -8,6 +8,7 @@ body {
     padding: 0;
     animation: trans 10s infinite;
     overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -169,7 +170,8 @@ nav .container {
     font-weight: bolder;
     border: 3px solid white;
 }
-.links a::after{
+
+.links a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -181,6 +183,7 @@ nav .container {
     background-color: yellow;
     transform: scale(0);
 }
+
 .links a:hover,
 .buttons button:hover {
     color: black;
@@ -195,7 +198,7 @@ nav .container {
 nav .container span {
     font-size: 25px;
     position: absolute;
-    right: 100px;
+    right: 0;
     color: yellow;
     transform: scale(0);
     cursor: pointer;
@@ -219,9 +222,10 @@ nav .container span {
 
 
 @media (max-width:1300px) {
-.logo h1 {
-    font-size: 20px;
-}
+    .logo h1 {
+        font-size: 20px;
+    }
+
     nav .container {
         justify-content: space-between;
         width: 80%;
@@ -330,7 +334,7 @@ nav .container span {
     color: black;
 }
 
-.text  h3 {
+.text h3 {
     margin-bottom: 40px;
     font-size: 30px;
     color: black;
@@ -347,12 +351,13 @@ nav .container span {
     border: 1px solid white;
 
     cursor: pointer;
-    background-color:yellow;
+    background-color: yellow;
     position: relative;
     z-index: 4;
-    
+
 }
-#index a::after{
+
+#index a::after {
     content: '';
     width: 100%;
     transition: 1s;
@@ -372,14 +377,15 @@ nav .container span {
     text-decoration: underline;
     color: white;
 
-    
+
 }
-#index a:hover::after{
+
+#index a:hover::after {
     text-decoration: underline;
-        transform: scale(1);
-        
-    
-    }
+    transform: scale(1);
+
+
+}
 
 
 .container1 .image {
@@ -425,36 +431,41 @@ nav .container span {
 
     }
 
-  .container1  .text {
+    .container1 .text {
         width: 70%;
     }
-    .container1  .text h1{
+
+    .container1 .text h1 {
         font-size: 30px;
     }
-    .container1  .text h3{
+
+    .container1 .text h3 {
         font-size: 25px;
     }
 
-    .container1 .image{
-    margin-top: 20px;
+    .container1 .image {
+        margin-top: 20px;
 
     }
 }
 
 @media (max-width:500px) {
-    .container1{
-    padding-bottom: 40px;
+    .container1 {
+        padding-bottom: 40px;
 
     }
-   .container1 .text{
+
+    .container1 .text {
         width: 80%;
     }
+
     .text h1 {
         font-size: 25px;
     }
+
     .text h3 {
         font-size: 20px;
-        
+
 
     }
 }
