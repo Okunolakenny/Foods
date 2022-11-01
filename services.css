@@ -1,24 +1,24 @@
-
-#services{
+#services {
     width: 100%;
     height: fit-content;
-    padding-top:100px;
-    padding-bottom:100px;
-background-color: green;
-position: relative;
-margin-top: 100px;
-text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
     /* background-image: url('./images/FB_IMG_16526934546499170.jpg'); */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
 }
-#services h1{
-    font-size: 50px;
+
+#services h1 {
+    font-size: 45px;
     color: white;
 }
 
-#services .container{
+#services .container {
     margin: auto;
     margin-top: 50px;
     display: flex;
@@ -29,7 +29,8 @@ text-align: center;
     flex-wrap: wrap;
 
 }
-#services .container div{
+
+#services .container div {
     width: 330px;
     height: 500px;
     background-color: none;
@@ -39,16 +40,18 @@ text-align: center;
     text-align: center;
     color: white;
 }
-#services .container div img{
+
+#services .container div img {
     width: 100%;
     height: 350px;
 }
-#services .container div h2{
-padding-bottom: 20px;
+
+#services .container div h2 {
+    padding-bottom: 20px;
 }
 
 
-#services .container div a{
+#services .container div a {
     cursor: pointer;
     padding: 10px 15px;
     background-color: white;
@@ -56,7 +59,8 @@ padding-bottom: 20px;
     z-index: 4;
     transform-origin: right;
 }
-#services .container div a::after{
+
+#services .container div a::after {
     content: '';
     width: 100%;
     transition: 1s;
@@ -70,16 +74,37 @@ padding-bottom: 20px;
     transform: scale(0);
 }
 
-#services .container div a:hover{
+#services .container div a:hover {
     text-decoration: underline;
-        
-    
-    }
 
-#services .container div a:hover::after{
-text-decoration: underline;
-    transform: scale(1);
-    
 
 }
 
+#services .container div a:hover::after {
+    text-decoration: underline;
+    transform: scale(1);
+
+
+}
+
+@media (max-width:800px) {
+
+ #services h1 {
+        font-size: 30px;
+    }
+
+}
+@media (max-width:735px) {
+
+    #services .container div {
+           width: 70%;
+       }
+   
+   }
+   @media (max-width:500px) {
+
+    #services .container div {
+           width: 90%;
+       }
+   
+   }

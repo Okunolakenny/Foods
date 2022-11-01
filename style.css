@@ -295,7 +295,7 @@ nav .container span {
     height: fit-content;
     margin-top: 100px;
     position: relative;
-    background: yellow;
+    background: white;
 }
 
 .container1 {
@@ -305,39 +305,31 @@ nav .container span {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
 }
 
 .container1 .text {
-    width: 60%;
+    width: 35%;
+    /* background-color: blue; */
     margin: auto;
     position: relative;
     align-items: center;
     justify-content: center;
     z-index: 1;
-}
-
-.text div {
-    width: 50%;
-    margin: auto;
-    align-items: center;
     text-align: center;
-    border-top: 10px solid white;
-    border-radius: 10px;
-    padding-left: 20px;
     padding-bottom: 20px;
-    /* color: white; */
-
 }
 
-.text div h1 {
+
+
+.text h1 {
     margin-bottom: 40px;
     font-size: 50px;
     color: black;
 }
 
-.text div h3 {
+.text  h3 {
     margin-bottom: 40px;
     font-size: 30px;
     color: black;
@@ -354,7 +346,7 @@ nav .container span {
     border: 1px solid white;
 
     cursor: pointer;
-    background-color: white;
+    background-color:yellow;
     position: relative;
     z-index: 4;
     
@@ -388,27 +380,20 @@ nav .container span {
     
     }
 
-.container1 .imagec {
-    width: 55%;
-    margin: auto;
-    height: 100%;
-    position: relative;
-}
 
-.container1 .imagec .image {
+.container1 .image {
     position: relative;
-    margin: auto;
-    width: 100%;
+    width: 50%;
     height: 100%;
 
 }
 
-.container1 .imagec .image img {
+.container1 .image img {
     width: 100%;
     height: 100%;
 }
 
-@media (max-width:1200px) {
+/* @media (max-width:1200px) {
     .text div {
         width: 70%;
         margin-top: 100px;
@@ -428,37 +413,48 @@ nav .container span {
         height: 100%;
     }
 
-}
+} */
 
-@media (max-width:768px) {
+@media (max-width:800px) {
 
     .container1 {
         flex-direction: column-reverse;
         margin-top: 100px;
+        padding-bottom: 50px;
 
     }
 
-    .text {
-        width: 100%;
+  .container1  .text {
+        width: 70%;
+    }
+    .container1  .text h1{
+        font-size: 30px;
+    }
+    .container1  .text h3{
+        font-size: 25px;
     }
 
-    .text div {
-        width: 100%;
-    }
-
-    .container1 .imagec {
-        width: 90%;
-    }
-
-    .container1 .imagec .image {
-        height: 100%;
+    .container1 .image{
+    margin-top: 20px;
 
     }
 }
 
-@media (max-width:414px) {
-    .text div h1 {
-        font-size: 30px;
+@media (max-width:500px) {
+    .container1{
+    padding-bottom: 40px;
+
+    }
+   .container1 .text{
+        width: 80%;
+    }
+    .text h1 {
+        font-size: 25px;
+    }
+    .text h3 {
+        font-size: 20px;
+        
+
     }
 }
 
