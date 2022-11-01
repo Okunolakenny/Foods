@@ -195,7 +195,7 @@ nav .container {
 nav .container span {
     font-size: 25px;
     position: absolute;
-    right: 0;
+    right: 50px;
     color: yellow;
     transform: scale(0);
     cursor: pointer;
