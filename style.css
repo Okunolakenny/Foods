@@ -195,7 +195,7 @@ nav .container {
 nav .container span {
     font-size: 25px;
     position: absolute;
-    right: 50px;
+    right: 0;
     color: yellow;
     transform: scale(0);
     cursor: pointer;
@@ -224,6 +224,7 @@ nav .container span {
 }
     nav .container {
         justify-content: space-between;
+        width: 80%;
     }
 
     .logo {
