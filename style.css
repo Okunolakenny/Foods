@@ -1,6 +1,9 @@
 * {
     text-decoration: none;
 }
+html{
+    overflow-x: hidden;
+}
 
 body {
     /* background-color: rgb(223, 186, 2); */
