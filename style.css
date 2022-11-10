@@ -201,7 +201,7 @@ nav .container {
 nav .container span {
     font-size: 25px;
     position: absolute;
-    right: 0;
+    right: 30px;
     color: yellow;
     transform: scale(0);
     cursor: pointer;
@@ -243,7 +243,7 @@ nav .container span {
 
     .links {
         position: fixed;
-        top: 70px;
+        top: 100px;
         right: 1px;
         width: 250px;
         text-align: center;

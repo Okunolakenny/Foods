@@ -58,7 +58,7 @@
 #contact .container>div:first-of-type {
     border-right: 10px solid yellow;
     border-radius: 10px;
-    padding-left: 20px;
+    padding-left: 35px;
     padding-bottom: 60px;
 }
 
@@ -200,10 +200,19 @@ textarea {
 
 
 
+#contact .container div a {
+    color: white;
+    transition: 4s;
+    }
+#contact .container div a:hover{
+text-decoration: underline;
+}
 #contact .container div:last-of-type h1 {
+
     font-size: 25px;
 
 }
+
 
 
 #contact .container span {
@@ -277,7 +286,10 @@ textarea {
 }
 
 @media (max-width:768px) {
-    #contact .overlay h1 {
+    #contact  h1 {
+        font-size: 25px;
+    }
+    #contact .container h2{
         font-size: 20px;
     }
 
