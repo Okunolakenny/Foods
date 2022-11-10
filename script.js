@@ -1,4 +1,6 @@
+let preloader = document.querySelector(".preloader");
 var bar = document.querySelector('.bar');
+
 var time = document.querySelector('.time');
 var links = document.querySelector('.links');
 const body = document.querySelector('body');
@@ -40,4 +42,17 @@ AOS.init({
     duration:500
 
 });  
+
+
+window.addEventListener("load", function () {
+    preloader.style.display = "none";
+});
+
+window.addEventListener("loadstart", function () {
+    preloader.style.display = "block";
+
+});
+setTimeout(() => {
+    window.removeEventListener("loadstart")
+}, 60000)
 
